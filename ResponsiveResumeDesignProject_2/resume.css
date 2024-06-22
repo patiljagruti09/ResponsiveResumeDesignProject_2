@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   font-family:'poppins', sans-serif;
+}
+
+body{
+    background: lightblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+position:relative;
+width:100%;
+max-width:1000px;
+min-height:1000px;
+margin:50px;
+background:#fff;
+display:grid;
+grid-template-columns: 1fr 2fr;
+box-shadow:0 90px 120px rgba(0,0,0, 0.1);
+
+}
+.container .leftSide{
+    position:relative;
+    background: #003147;
+    padding:40px;
+}
+.profileText{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+.profileText h2{
+    color:#fff;
+    font-size:31px;
+    margin-top:20px;
+    text-align:center;
+    font-weight:600;
+    line-height:1.4em;
+}
+.profileText h2 span{
+    font-size:1.6rem;
+    font-weight: 300;
+}
+.contactInfo{
+    padding-top:20px;
+}
+.title{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 550;
+    letter-spacing:0.1px;
+    margin-bottom:12px;
+    margin-top:15px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin:10px 0;
+    cursor:pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width:18px;
+    font-size:15px;
+    color:#03a9f4;
+}
+.contactInfo ul li .text{
+    color:#f5f3f3b3;
+    font-weight:17;
+    font-size:13px;
+    text-decoration: none;  
+}
+.education li{
+margin-bottom:15px;
+}
+.education h5{
+color:#03a9f4;
+font-weight: 100;
+}
+.education h4:nth-child(2){
+    color:#fff;
+    font-weight: 50;
+}
+.education h4{
+    color:#f5f3f3b3;
+    font-weight: 10;  
+}
+.skills ul li span{
+    color:#f5f3f3b3;
+    font-weight:17;
+    font-size:13px; 
+}
+
+.skills .percent{
+    position: relative;
+    width:100%;
+    height:5px;
+    background:#081921;
+    display:block;;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.skills .percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:#03a9f4;
+}
+.languages ul li span{
+    color:#f5f3f3b3;
+    font-weight:17;
+    font-size:13px;
+}
+.languages .percent{
+    position: relative;
+    width:100%;
+    height:5px;
+    background:#081921;
+    display:block;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.languages .percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:#03a9f4;
+}
+.interest h3 ul{
+    position: relative;
+}
+.interest ul li{
+    position: relative;
+    list-style: none;
+    margin:10px 0;
+}
+.interest ul li .icon{
+    display: inline-block;
+    width:18px;
+    font-size:15px;
+    color:#03a9f4;
+
+}
+.interest ul li span{
+    color:#f5f3f3b3;
+    font-weight:17;
+    font-size:13px;
+}
+.container .rightSide{
+    position:relative;
+    background: #fff;
+    padding:40px;
+}
+.about{
+    margin-bottom: 30px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color:#003147;
+    text-transform: uppercase;
+    font-weight: 550;
+    letter-spacing: 0.1px;
+    margin-bottom: 3px;
+    margin-top:3px;
+}
+p{
+    color:#333;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin:15px 0;
+}
+.about .box .yearCompany{
+    min-width:150px;
+    margin-right:10px;
+}
+.about .box .yearCompany h5{
+    text-transform: initial;
+    color:#848c90;
+    font-weight: 650;
+}
+.about .box .yearCompany .companyName{
+    text-transform: uppercase;
+    color:#03a9f4;
+    font-weight: 550;
+}
+.about .box .text h4{
+    text-transform:initial;
+    color:#2a7da2;
+    font-size:19px;
+}
+.about .box .text li{
+    color:#333;
+}
+.box2{
+    margin:15px 0;
+}
+.project .box2 h4{
+    color:#2a7da2;
+    font-size:19px;
+    margin-bottom: 3px;   
+}
+.project .box2 h5{
+    color:#848c90;
+    font-size:19px;
+    margin-bottom: 3px;
+}
+.project .box2 p{
+    color:#333;
+}
+.certificate ul li{
+list-style:none;
+color:#333;
+}
+.certificate ul li .fa{
+    color:#03a9f4;
+    font-size:19px;
+    width:20px;
+}
+@media(max-width:1000px)
+{ 
+    .container{
+        margin:10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:1000px)
+{
+    .about .box{
+        
+        flex-direction: column;
+    }
+    .about .box .yearCompany{
+        
+        margin-bottom:5px;
+    }
+}
+
+
